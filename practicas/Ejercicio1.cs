@@ -12,6 +12,14 @@ namespace Principal // declaro el nombre de mi espacio
         public string apellido = "";
         public int legajo = 0;
         public string carrera = "";
+
+public string devuelveDatosEstudiantes() 
+    
+{ 
+Console.WriteLine ( "El nombre es"+ nombre + "la edad es" + edad+ "el apellido es" +apellido+
+                   "el legajo es"+legajo+"la carrera es"+ carrera);
+}
+
         
     }
     
