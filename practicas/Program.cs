@@ -25,6 +25,7 @@ class Programa1 {
         profesor1.apellido=" Perez";
         profesor1.telefono ="119999999";
         Console.WriteLine (profesor1.apellido);
+        Console.WriteLine(estudiante1.devuelveDatosEstudiantes());
 
     }
 }
