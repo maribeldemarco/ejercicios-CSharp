@@ -25,7 +25,8 @@ class Programa1 {
         profesor1.apellido=" Perez";
         profesor1.telefono ="119999999";
         Console.WriteLine (profesor1.apellido);
-        Console.WriteLine(estudiante1.devuelveDatosEstudiantes());
+        estudiante1.devuelveDatosEstudiantes();// llamo a la funcion sin writeline ya que tiene una writeline dentro
+  // ademas la funcion es de tipo void porque no tiene un return dentro
 
     }
 }
