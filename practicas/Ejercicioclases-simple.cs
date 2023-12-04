@@ -5,12 +5,12 @@ using System;
 namespace Principal // declaro el nombre de mi espacio
 {
 
-    class Profesores 
+    class Profesores
     {
-        public string materia = ""; //la inicializo en 0
+        public string materia = "";
         public string nombre = "";
         public string apellido = "";
-        public string telefono ="";
+        public string telefono = " ";
     }
 
-    }
+}
