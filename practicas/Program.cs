@@ -35,6 +35,9 @@ class Programa1 {
         mimascota1= new Mascotas( "abath","gato",8,"amigable");
         datosmimascota=mimascota1.muestraDatosDeMascota();
         Console.WriteLine(datosmimascota);
+        Mascotas mimascota2;
+        mimascota2= new Mascotas("kunio", "gato", 4, "jugueton");
+        Console.WriteLine(mimascota2.muestraDatosDeMascota());        
     }
 }
 }
