@@ -58,11 +58,23 @@ namespace Principal
             miparticipante.apellido = "Gomez";
             datosparticipante = miparticipante.devuelveParticipantes();
             Console.WriteLine(datosparticipante);
-
-
-
-
-
-        }
+            string muestra;
+            Gatos [] gatosatendidos;
+            gatosatendidos=new Gatos[3];
+            gatosatendidos[0]= new Gatos (true, 8, 1, "Gipsi",  "12344456",  "Alicia",  "Bonelli",  "1555554879" );
+            gatosatendidos[1]= new Gatos (false,1, 2, "Any",  "1234577",  "Amanda",  "Rodriguez",  "1555554870");
+            gatosatendidos[2]= new Gatos (false,3, 3, "Bigotes",  "10234567",  "Dario",  "Zapata",  "1556554870");
+            muestra=gatosatendidos[0].MuestraDatos();
+            Console.WriteLine(muestra);
+            gatosatendidos[0].SetDatosGato(2);
+            muestra=gatosatendidos[0].MuestraDatos();
+            Console.WriteLine(muestra);
+            gatosatendidos[0].SetDatosGato(false);
+            muestra=gatosatendidos[0].MuestraDatos();
+            Console.WriteLine(muestra);
+            gatosatendidos[0].SetDatosGato (true,8 );
+            muestra=gatosatendidos[0].MuestraDatos();
+            Console.WriteLine(muestra);
+       }
     }
 }
