@@ -16,16 +16,16 @@ namespace Principal // declaro el nombre de mi espacio
 public void devuelveDatosEstudiantes()  //no devuelve nada la funcion, no tiene return, sino un console.writeline por eso es void
     
 { 
-Console.WriteLine ( "El nombre es"+ nombre + "la edad es" + edad+ "el apellido es" +apellido+
-                   "el legajo es"+legajo+"la carrera es"+ carrera);
+Console.WriteLine ( "El nombre es "+ nombre + " la edad es " + edad+ " el apellido es " +apellido+
+                   " el legajo es "+legajo+" la carrera es "+ carrera);
 }
 
 
         public string  retornaDatosEstudiantes() // devuelve un string por eso uso el return
     
 { 
-return  "El nombre es"+ nombre + "la edad es" + edad+ "el apellido es" +apellido+
-                   "el legajo es"+legajo+"la carrera es"+ carrera ;
+return  "El nombre es "+ nombre + " la edad es " + edad+ " el apellido es " +apellido+
+                   " el legajo es  "+legajo+" la carrera es "+ carrera ;
 }
         
     }
