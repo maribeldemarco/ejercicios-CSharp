@@ -55,6 +55,11 @@ namespace Principal
             miparticipante = new Participantes("Mercedes", "Perez", 12, datospersona);
             datosparticipante = miparticipante.devuelveParticipantes();
             Console.WriteLine(datosparticipante);
+            miparticipante.apellido = "Gomez";
+            datosparticipante = miparticipante.devuelveParticipantes();
+            Console.WriteLine(datosparticipante);
+
+
 
 
 
