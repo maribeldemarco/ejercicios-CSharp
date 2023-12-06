@@ -81,6 +81,16 @@ namespace Principal
             Tren primertren;
             primertren= new Tren ("Avellaneda", "12.45", 130.50, "Zona Sur", "La Plata", 120);
             primertren.Datosviaje();
+            Bebidas mibebida;
+            mibebida= new Bebidas(1200.23, 200);
+            mibebida.Datosbebida();
+            Gaseosa mibebida2;
+            mibebida2= new Gaseosa("Pepsi", "gaseosa cola", 1500, 1200);
+            mibebida2.Datosbebida();
+            Agua mibebida3;
+            mibebida3= new Agua("villavicencio", "sin gas", 650, 12000);
+            mibebida3.Datosbebida();
+
 
 
        }

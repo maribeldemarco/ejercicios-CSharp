@@ -1,64 +1,65 @@
+using System.ComponentModel;
+
 namespace Principal{
 
+class Bebidas {
 
- abstract class Transporte {
+protected double precio;
+protected int stock;
 
-public double valorpasaje;
-public string origen;
-public string destino;
-
-public int minutosdeviaje;
-
-public Transporte (double valorpasaje, string origen, string destino, int minutosdeviaje)
+public Bebidas(double precio, int stock)
 {
-this.valorpasaje= valorpasaje;
-this.origen=origen;
-this.destino=destino;
-this.minutosdeviaje=minutosdeviaje;
-
+    this.precio=precio;
+    this.stock=stock;
 
 }
 
- public abstract void Datosviaje (); 
+public virtual void Datosbebida()
+{Console.WriteLine ("Has elegido una bebida generica. Su precio es "+ this.precio + ".Su stock es " +this.stock);}
 
 }
 
-class Colectivo : Transporte
-{ string patente;
-  int linea;
-
-public Colectivo (string patente, int linea, double valorpasaje, string origen, string destino, int minutosdeviaje): base(valorpasaje,origen,destino,minutosdeviaje)
-
+class Gaseosa: Bebidas
 {
-this.patente=patente;
-this.linea=linea;
+ string marca;
+ string tipobebida;
 
-}
-        public override void Datosviaje()
-        {Console.WriteLine("Usted ha viajado en colectivo. El valor del pasaje en pesos es "+ this.valorpasaje+ ".  El origen es "+ this.origen + " el destino es " +this.destino+ ". \n El viaje en minutos demora: "+this.minutosdeviaje+" minutos, la linea es "+this.linea +" , \n  la patente es "+this.patente);
-         }
-
-    }
-
-class Tren: Transporte{
- 
-
-string estacion;
-string horario;
-
-public Tren (string estacion, string horario, double valorpasaje, string origen, string destino, int minutosdeviaje): base (valorpasaje,origen,destino,minutosdeviaje)
+ public Gaseosa(string marca, string tipobebida, double precio, int stock): base (precio, stock)
 {
-this.estacion=estacion;
-this.horario=horario;
+this.marca=marca;
+this.tipobebida=tipobebida;
+
+}
+public override void Datosbebida(){
+Console.WriteLine ("Has elegido una " +this.tipobebida+ " Su precio es "+ this.precio + ".Su stock es " +this.stock
++ " .Su marca es "+ this.marca);}
 
 }
 
-        public override void Datosviaje()
-        { Console.WriteLine("Usted ha viajado en Tren. El valor del pasaje en pesos es "+ this.valorpasaje+ " \n  El origen es "+ this.origen + " el destino es " +this.destino+ ". \n El viaje en minutos demora: "+this.minutosdeviaje+ " \n  La estacion de salida es "+ this.estacion + " el horario es " +this.horario + " hs.");
-        }
 
-    }
+class Agua: Bebidas{
+
+string marca;
+string gasificada;
+
+public Agua (string marca, string gasificada, double precio, int stock): base (precio,stock)
+{
+    this.marca=marca;
+    this.gasificada=gasificada;
+
+}
+
+public override void Datosbebida(){
+Console.WriteLine ("Has elegido una agua " +this.gasificada+ " Su precio es "+ this.precio + ".Su stock es " +this.stock
++ ". Su marca es "+ this.marca);}
+
+}
+
+
 
 
 }
+
+
+
 
