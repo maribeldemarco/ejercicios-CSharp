@@ -59,7 +59,7 @@ namespace Principal
             datosparticipante = miparticipante.devuelveParticipantes();
             Console.WriteLine(datosparticipante);
             string muestra;
-            Gatos [] gatosatendidos;
+            Gatos[] gatosatendidos;
             gatosatendidos=new Gatos[3];
             gatosatendidos[0]= new Gatos (true, 8, 1, "Gipsi",  "12344456",  "Alicia",  "Bonelli",  "1555554879" );
             gatosatendidos[1]= new Gatos (false,1, 2, "Any",  "1234577",  "Amanda",  "Rodriguez",  "1555554870");
@@ -75,6 +75,14 @@ namespace Principal
             gatosatendidos[0].SetDatosGato (true,8 );
             muestra=gatosatendidos[0].MuestraDatos();
             Console.WriteLine(muestra);
+            Colectivo primercolectivo;
+            primercolectivo= new Colectivo ("ABC123", 93, 134.2, "Boedo", "Retiro", 34);
+            primercolectivo.Datosviaje();         
+            Tren primertren;
+            primertren= new Tren ("Avellaneda", "12.45", 130.50, "Zona Sur", "La Plata", 120);
+            primertren.Datosviaje();
+
+
        }
     }
 }
