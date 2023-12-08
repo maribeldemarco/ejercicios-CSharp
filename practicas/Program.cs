@@ -90,9 +90,26 @@ namespace Principal
             Agua mibebida3;
             mibebida3= new Agua("villavicencio", "sin gas", 650, 12000);
             mibebida3.Datosbebida();
+            Division midivision; // código en archivo excepciones.cs
+            midivision= new Division();
+            midivision.CalculoDivision();
+            Miexcepcion miExcepcion = new Miexcepcion();
+           miExcepcion.ControlError();
+            Console.ReadLine();
+            Miexcepcion2 miexcepcion2;
+            miexcepcion2= new Miexcepcion2();
+            miexcepcion2.ControlError();
+                        Console.ReadLine();
+
+
+
 
 
 
        }
     }
+
+
+
+
 }
