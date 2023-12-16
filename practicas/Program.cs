@@ -147,8 +147,21 @@ namespace Principal
             migato.Comer();
             migato.Mostrardatosdelanimal();
             Console.WriteLine("-----");
-
-
+        //Para ver el codigo ir a archivo Ejerciciopoo-listas.cs
+        MiLista milista;
+        milista =new MiLista();
+        milista.AgregaraLista("abath");
+        milista.AgregaraLista("kuni");
+        milista.mostrarLista();
+        milista.eliminarEnLista("abath");
+        milista.mostrarLista();
+        milista.AgregaraLista("Abath");
+        milista.AgregaraLista("Pichu");
+        milista.AgregaraLista("Jazmin");
+        milista.OrdenoAlfabeticamente();
+        milista.mostrarLista();        
+        milista.borroElementoNumero(1);
+        milista.mostrarLista();        
 
 
 
